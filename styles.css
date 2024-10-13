@@ -254,3 +254,11 @@ footer {
   text-align: center;
   margin-top: 2rem;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+    padding: 0; /* Remove padding to occupy the entire screen */
+  }
+}
