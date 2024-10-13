@@ -96,11 +96,161 @@ textarea:not([rows]) {
 /* Custom CSS */
 
 :root {
-    --Stone-100: hsl(30, 54%, 90%);
-    --Stone-150: hsl(30, 18%, 87%);
-    --Stone-600: hsl(30, 10%, 34%);
-    --Stone-900: hsl(24, 5%, 18%);
-    --Brown-800: hsl(14, 45%, 36%);
-    --Rose-800: hsl(332, 51%, 32%);
-    --Rose-50: hsl(330, 100%, 98%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+  background-color: var(--Stone-100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+#container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 45rem;
+  border-radius: 1rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 0.8rem;
+  margin-bottom: 2rem;
+  object-fit: cover;
+}
+
+#recipe-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#main-heading {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  color: var(--Stone-900);
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  color: var(--Stone-600);
+}
+
+section {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  color: var(--Stone-600);
+}
+
+#preparation-time {
+  background-color: var(--Rose-50);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+.sub-heading {
+  color: var(--Rose-800);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+li {
+  padding-left: 2.5rem;
+  text-indent: -2rem;
+  margin-bottom: 0.5rem;
+}
+
+#preparation-time ul li::marker {
+  font-size: 0.8rem;
+  color: var(--Rose-800);
+}
+
+#preparation-time ul {
+  color: var(--Stone-600);
+}
+
+span {
+  margin-left: 0.9rem;
+}
+
+section:not(#preparation-time):not(:last-of-type) {
+  border-bottom: 1px solid var(--Stone-150);
+  padding-bottom: 1.5rem;
+}
+
+.section-heading {
+  font-family: "Young Serif", serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--Brown-800);
+  margin-bottom: 0.5rem;
+}
+
+#ingredients ul li::marker {
+  font-size: 0.8rem;
+  color: var(--Brown-800);
+}
+
+ol li {
+  padding-left: 2.5rem;
+  text-indent: -2rem;
+}
+
+ol li::marker {
+  font-weight: 700;
+  color: var(--Brown-800);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid var(--Stone-150);
+}
+
+th:not(:last-child),
+td:not(:last-child) {
+  padding: 0.8rem 0;
+}
+
+th {
+  text-align: left;
+  font-weight: 500;
+  position: relative;
+  left: 2rem;
+}
+
+td {
+  color: var(--Brown-800);
+}
+
+footer {
+  font-family: "Outfit", sans-serif;
+  color: var(--Stone-600);
+  text-align: center;
+  margin-top: 2rem;
 }
